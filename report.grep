@@ -1,0 +1,21 @@
+# Emails
+## Emails only click
+TOTAL_EMAILS_ONLY_CLICK  1
+EMAIL_CLICK admin@email.com
+## Emails with login
+TOTAL_EMAILS_LOGIN  1
+EMAIL_LOGIN test@email.com
+# IPs
+## IPs only click
+TOTAL_IPs_ONLY_CLICK  1
+IP_CLICK  ::1 TOTAL_CLICKS  1
+## IPs logins
+TOTAL_IPs_LOGINS  1
+IP_LOGIN  127.0.0.1 TOTAL_CLICKS  1
+# USER AGENTS
+## USER AGENT only click
+TOTAL_USER_AGENT_ONLY_CLICK  1
+USER_AGENT_CLICK  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.20 TOTAL_CLICKS  1
+## USER AGENT logins
+TOTAL_USER_AGENT_LOGINS  1
+USER_AGENT_LOGIN  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.20 TOTAL_CLICKS  1
