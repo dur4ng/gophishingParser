@@ -50,5 +50,5 @@ example@email.com:map[
 ```
 ## TODO
 - save out grepeable report into a file
-- analytics of user agents, identify device(pc,movil) portentage
-- analytics of ips, ASN, provider, owner
+- analytics of user agents: identify device(pc,movil), percentages, ...
+- analytics of ips: ASN, provider, owner, percentages,...
