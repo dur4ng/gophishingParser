@@ -13,7 +13,7 @@
 	               \/        \/     \/        \//_____/                   \/           \/     \/
 	
 Usage of our Program:
-./phishingParser ./phishreport.py -t emailsEmpleados.csv -l ./login.log --login-string 'POST /primer.php' -v
+./gophishingParser -t emailsEmpleados.csv -l ./login.log --login-string 'POST /primer.php' -v
 ```
 ## Queries to the grepeable output
 - Count of emails that only click the malicius link: `cat ./report.txt | grep "TOTAL_EMAILS_ONLY_CLICK" | awk '{ print $2}'`
