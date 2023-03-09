@@ -3,6 +3,7 @@ package modules
 import (
 	"fmt"
 	"os"
+	"time"
 )
 
 var (
@@ -20,7 +21,7 @@ func Root() {
 	               \/        \/     \/        \//_____/                   \/           \/     \/       
 	`)
 
-	fmt.Println()
+	fmt.Println("Time:", time.Now())
 
 	if sess, err = NewSession(); err != nil {
 		fmt.Println(err)

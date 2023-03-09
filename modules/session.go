@@ -7,16 +7,31 @@ type Session struct {
 }
 
 type Data struct {
-	targetHashMap       map[string]string
-	victimsHashMap      map[string]map[string]map[string]string
-	emailsOnlyClick     []string
-	emailsLogin         []string
-	ipsOnlyClick        map[string]int
-	ipsLogins           map[string]int
-	useragentsOnlyClick map[string]int
-	useragentLogins     map[string]int
 	clickString         string
 	loginString         string
+	downloadString string
+
+	targetHashMap       map[string]string
+	victimsHashMap      map[string]map[string]map[string]string
+
+	emailsOnlyClick     []string
+	emailsLogin         []string
+	emailsDownload 		[]string
+
+	ipsOnlyClick        map[string]int
+	ipsLogins           map[string]int
+	ipsDownload 		map[string]int
+	useragentsOnlyClick map[string]int
+	useragentLogins     map[string]int
+	useragentDownload   map[string]int
+
+	totalEmployees float64
+	afectedPercentage float64
+	nonAfectedPercentage float64
+	clickPercentage float64
+	loginPercentage float64
+	downloadPercentage float64
+	
 }
 
 func (s *Session) Start() {
