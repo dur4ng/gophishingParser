@@ -26,8 +26,8 @@ type Data struct {
 	useragentDownload   map[string]int
 
 	totalEmployees float64
-	afectedPercentage float64
-	nonAfectedPercentage float64
+	affectedPercentage float64
+	nonAffectedPercentage float64
 	clickPercentage float64
 	loginPercentage float64
 	downloadPercentage float64
