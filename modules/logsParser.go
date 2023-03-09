@@ -307,8 +307,8 @@ func analyceData(sess *Session) ([]string, []string, []string, map[string]int,ma
 	sess.Data.clickPercentage = (float64(len(emailsOnlyClicks)) * float64(100)) / sess.Data.totalEmployees
 	sess.Data.loginPercentage = (float64(len(emailsLogins)) * float64(100)) / sess.Data.totalEmployees
 	sess.Data.downloadPercentage = (float64(len(emailsDownload)) * float64(100)) / sess.Data.totalEmployees
-	sess.Data.afectedPercentage = sess.Data.clickPercentage + sess.Data.loginPercentage + sess.Data.downloadPercentage
-	sess.Data.nonAfectedPercentage = float64(100) - sess.Data.afectedPercentage
+	sess.Data.affectedPercentage = sess.Data.clickPercentage + sess.Data.loginPercentage + sess.Data.downloadPercentage
+	sess.Data.nonAffectedPercentage = float64(100) - sess.Data.affectedPercentage
 
 	return emailsOnlyClicks, emailsLogins, emailsDownload, ipsOnlyClick, ipsLogins, ipsDownload, useragentOnlyClick, useragentLogins, useragentDownload
 }
@@ -331,8 +331,8 @@ func cliReport(sess *Session) {
 func printPercentage(sess *Session) {
 	fmt.Println("TOTAL_EMPLOYEES", sess.Data.totalEmployees)
 	fmt.Println("# Percentages")
-	fmt.Println("AFFECTED", sess.Data.afectedPercentage,"%")
-	fmt.Println("NON_AFFECTED", sess.Data.nonAfectedPercentage)
+	fmt.Println("AFFECTED", sess.Data.affectedPercentage,"%")
+	fmt.Println("NON_AFFECTED", sess.Data.nonAffectedPercentage)
 	fmt.Println("ONLY_CLICK", sess.Data.clickPercentage,"%")
 	fmt.Println("LOGIN", sess.Data.loginPercentage,"%")
 	fmt.Println("DOWNLOAD", sess.Data.downloadPercentage,"%")
