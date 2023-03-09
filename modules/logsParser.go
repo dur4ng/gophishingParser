@@ -331,8 +331,8 @@ func cliReport(sess *Session) {
 func printPercentage(sess *Session) {
 	fmt.Println("TOTAL_EMPLOYEES", sess.Data.totalEmployees)
 	fmt.Println("# Percentages")
-	fmt.Println("AFECTED", sess.Data.afectedPercentage,"%")
-	fmt.Println("NON_AFECTED", sess.Data.nonAfectedPercentage)
+	fmt.Println("AFFECTED", sess.Data.afectedPercentage,"%")
+	fmt.Println("NON_AFFECTED", sess.Data.nonAfectedPercentage)
 	fmt.Println("ONLY_CLICK", sess.Data.clickPercentage,"%")
 	fmt.Println("LOGIN", sess.Data.loginPercentage,"%")
 	fmt.Println("DOWNLOAD", sess.Data.downloadPercentage,"%")
